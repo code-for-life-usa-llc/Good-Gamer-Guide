@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <style>
+            body{
+                color: white;
+                text-align: center;
+                background-color: darkmagenta;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXQh3LzlrjuUcwgbDU-5xLzeEHqS2OqO_QrKUb5TF9FEypmv1Z);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .question{
+                display: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="ageQuestion" align="center">
+           <h3 id="questionWindow">How long do you play video games each day?</h3>
+           <br>
+            <a href="effects.html"><button id="more" class="btn btn-primary character" type="submit">more then 1 hour a day</button></a>
+           <button id="less" class="btn btn-danger character" type="submit">less then 1 hour a day</button>
+       </div> 
+<!--        second qusetion-->
+        <div id="overrated" align="center" class="question">
+            <h1 id="characterPath">
+                
+                <h3>Do you know any overrated games?</h3>
+                <br>
+                <button id="yes" class="btn btn-primary character" type="submit">yes</button>
+                <a href="overrated_games.html"><button id="no" class="btn btn-danger character" type="submit">no</button></a>
+                
+            </h1>
+        </div>
+<!--            question #3-->
+            
+        <div id="underrated" class="question">
+            <h1 id="thiredQuestion">
+            
+                <h3>Did you know any underrated games?</h3>
+                <br>
+                <button id="yess" class="btn btn-primary character" type="submit">yes</button>
+                <a href="underrated_games.html"><button id="noo" class="btn btn-danger character" type="submit">no</button></a>
+                
+            </h1>
+        </div>
+<!--            question #4-->
+        
+        <div id="makeMoney" class="question">
+            <h1 id="forthQuestion">
+                
+                <h3>Do you know how to earn money for playing video games</h3>
+                <br>
+                <button id="yesFour" class="btn btn-primary character" type="submit">yes</button>
+                <a href="Money.html"><button id="noFour" class="btn btn-danger character" type="submit">no</button></a>
+            </h1>
+        </div>
+<!--            question #5-->
+        <div id="about" class="question">
+            <h1 id="fifthQuestion">
+                <h3>Do you know what our mission is?</h3>
+                <br>
+                <a href="home_page.html"><button id="yesFive" class="btn btn-primary character" type="submit">yes</button></a>
+                <a href="about.html"><button id="noFive" class="btn btn-danger character" type="submit">no</button></a>
+            </h1>
+        </div>
+        <script>
+//             FIRST QUESTION
+             let moreButton = document.getElementById('more');
+             moreButton.addEventListener('click', displayCharacterChosen);
+            
+            
+            
+             let lessButton = document.getElementById('less');
+             lessButton.addEventListener('click', displayCharacterChosen);
+            
+            let characterPath = document.getElementById('characterPath');
+            
+            
+            function displayCharacterChosen(){
+                console.log(this);
+            }
+            
+            
+            function displayCharacterChosen(){
+                console.log(this);
+            
+            
+            if(this.id == 'less'){
+                
+                document.body.style.backgroundImage = "url('img/scorpion.jfif')";
+                document.getElementById('overrated').style.display = 'inline-block';
+                document.getElementById('ageQuestion').style.display = 'none';
+            }else{
+                console.log('loading');
+            }
+        }
+           
+//          SECOND QUESTION
+            
+             let yesButton = document.getElementById('yes');
+             yesButton.addEventListener('click', displayThiredQuestion);
+            
+            
+            
+             let noButton = document.getElementById('no');
+             noButton.addEventListener('click', displayThiredQuestion);
+            
+            let thiredQuestion = document.getElementById('thiredQuestion');
+            
+            
+            function displayThiredQuestion(){
+                console.log(this)
+            }
+            
+            
+            function displayThiredQuestion(){
+                console.log(this)
+            
+            
+            if(this.id == 'yes'){
+                document.body.style.backgroundImage = "url(img/mirror_edg.jfif)"
+                document.getElementById('underrated').style.display = 'inline-block';
+                document.getElementById('overrated').style.display = 'none';
+            }else{
+                tconsole.log('loading');
+            }
+        }
+            
+//          THIRED QUESTION
+            
+            let yessButton = document.getElementById('yess');
+             yessButton.addEventListener('click', displayFourthQuestion);
+            
+            
+            
+             let nooButton = document.getElementById('noo');
+             nooButton.addEventListener('click', displayFourthQuestion);
+            
+            let fourthQuestion = document.getElementById('fourthQuestion');
+            
+            
+            function displayFourthQuestion(){
+                console.log(this)
+            }
+            
+            
+            function displayFourthQuestion(){
+                console.log(this)
+            
+            
+            if(this.id == 'yess'){
+                document.body.style.backgroundImage = "url('img/money.jfif')"
+                document.getElementById('makeMoney').style.display = 'inline-block';
+                document.getElementById('underrated').style.display = 'none';
+                
+            }else{
+                console.log('loading');
+            }
+        }
+//            FOURTH QUESTION
+            
+            let yesFourButton = document.getElementById('yesFour');
+             yesFourButton.addEventListener('click', displayFifthQuestion);
+            
+            
+            
+             let noFourButton = document.getElementById('noFour');
+             noFourButton.addEventListener('click', displayFifthQuestion);
+            
+            let fifthQuestion = document.getElementById('fifthQuestion');
+            
+            
+            function displayFifthQuestion(){
+                console.log(this)
+            }
+            
+            
+            function displayFifthQuestion(){
+                console.log(this)
+            
+            
+            if(this.id == 'yesFour'){
+                document.body.style.backgroundImage = "url('img/about_us.jfif')"
+                document.getElementById('about').style.display = 'inline-block';
+                document.getElementById('makeMoney').style.display = 'none';
+            }else{
+                console.log('loading');
+            }
+        }
+        </script>
+        
+    </body>
+</html>
