@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html>
+ <html lang="en">
     <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
@@ -23,29 +23,18 @@
         </style>
     </head>
     <body>
-        
+        <div id="overrated">
         <div id="ageQuestion" align="center">
-           <h3 id="questionWindow">How long do you play video games each day?</h3>
-           <br>
-            <a href="effects.html"><button id="more" class="btn btn-primary character" type="submit">more then 1 hour a day</button></a>
-           <button id="less" class="btn btn-danger character" type="submit">less then 1 hour a day</button>
-       </div> 
-<!--        second qusetion-->
-        <div id="overrated" align="center" class="question">
-            <h1 id="characterPath">
-                
                 <h3>Do you know any overrated games?</h3>
                 <br>
                 <button id="yes" class="btn btn-primary character" type="submit">yes</button>
                 <a href="overrated_games.html"><button id="no" class="btn btn-danger character" type="submit">no</button></a>
-                
-            </h1>
+       </div> 
         </div>
-<!--            question #3-->
-            
-        <div id="underrated" class="question">
-            <h1 id="thiredQuestion">
-            
+<!--        second qusetion-->
+        <div id="underrated" align="center" class="question">
+            <h1 id="characterPath">
+                
                 <h3>Did you know any underrated games?</h3>
                 <br>
                 <button id="yess" class="btn btn-primary character" type="submit">yes</button>
@@ -53,57 +42,32 @@
                 
             </h1>
         </div>
-<!--            question #4-->
-        
+<!--            question #3-->
+            
         <div id="makeMoney" class="question">
-            <h1 id="forthQuestion">
+            <h1 id="thiredQuestion">
                 
-                <h3>Do you know how to earn money for playing video games</h3>
+            <h3>Do you know how to earn money for playing video games</h3>
                 <br>
                 <button id="yesFour" class="btn btn-primary character" type="submit">yes</button>
                 <a href="earn.html"><button id="noFour" class="btn btn-danger character" type="submit">no</button></a>
             </h1>
         </div>
-<!--            question #5-->
+<!--            question #4-->
+        
         <div id="about" class="question">
-            <h1 id="fifthQuestion">
+            <h1 id="forthQuestion">
                 <h3>Do you know what our mission is?</h3>
                 <br>
                 <a href="home_page.html"><button id="yesFive" class="btn btn-primary character" type="submit">yes</button></a>
                 <a href="about.html"><button id="noFive" class="btn btn-danger character" type="submit">no</button></a>
+                 
             </h1>
         </div>
+<!--            question #5-->
         <script>
 //             FIRST QUESTION
-             let moreButton = document.getElementById('more');
-             moreButton.addEventListener('click', displayCharacterChosen);
-            
-            
-            
-             let lessButton = document.getElementById('less');
-             lessButton.addEventListener('click', displayCharacterChosen);
-            
-            let characterPath = document.getElementById('characterPath');
-            
-            
-            function displayCharacterChosen(){
-                console.log(this);
-            }
-            
-            
-            function displayCharacterChosen(){
-                console.log(this);
-            
-            
-            if(this.id == 'less'){
-                
-                document.body.style.backgroundImage = "url('img/scorpion.jfif')";
-                document.getElementById('overrated').style.display = 'inline-block';
-                document.getElementById('ageQuestion').style.display = 'none';
-            }else{
-                console.log('loading');
-            }
-        }
+             
            
 //          SECOND QUESTION
             
